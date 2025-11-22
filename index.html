@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Roel George - Projects & Profile</title>
+  <meta name="description" content="Roel George - musAIc, LAIDA - demos and code on GitHub." />
+  <style>
+    :root{
+      --bg:#071019;
+      --muted: #9fb3b3;
+      --teal: #008080;
+      --text: #e6f7f7;
+      --panel: rgba(255,255,255,0.03);
+      --bar-bg: rgba(255,255,255,0.04);
+      --bar-fill: rgba(0,255,120,0.9);
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      color:var(--text);
+      background:var(--bg);
+      -webkit-font-smoothing:antialiased;
+    }
+    a{color:var(--teal);text-decoration:none}
+    .wrap{max-width:980px;margin:20px auto;padding:18px;position:relative;z-index:3}
+    header{display:flex;align-items:center;gap:14px}
+    .avatar{width:78px;height:78px;border-radius:10px;background:linear-gradient(135deg,var(--teal),#0b7490);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:28px;flex-shrink:0}
+    h1{margin:0;font-size:24px}
+    .subtitle{color:var(--muted);margin-top:6px}
+    nav{margin-left:auto;font-size:13px}
+    .grid{display:grid;grid-template-columns:360px 1fr;gap:18px;margin-top:14px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,8,0.5);border:1px solid rgba(255,255,255,0.03)}
+    .section-title h3{margin:0;color:var(--teal);font-size:13px}
+    .lead{margin:0;color:var(--muted);line-height:1.45;font-size:14px}
+    .projects .project{margin-bottom:12px}
+    .project h4{margin:0 0 6px 0}
+    .chip{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.03);padding:6px 8px;border-radius:6px;font-size:13px;color:var(--muted);display:inline-block;margin:4px 6px 4px 0}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,var(--teal),#059b9b);color:white;font-weight:600}
+    .chess-cta{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg,#0ba18f,#059b9b);color:white;font-weight:700;text-decoration:none}
+    .chess-cta svg{width:18px;height:18px;flex-shrink:0}
+    canvas#bg{position:fixed;left:0;top:0;width:100%;height:100%;z-index:1;display:block}
+    .overlay{position:relative;z-index:3}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:64px;height:64px}}
+    .card{padding:12px}
+    ul.compact{padding-left:18px;margin:8px 0}
+    .skills-list{column-count:2;column-gap:12px}
+    .lang-row{margin:8px 0}
+    .lang-label{font-size:13px;color:var(--muted);margin-bottom:6px}
+    .progress{background:var(--bar-bg);height:10px;border-radius:8px;overflow:hidden}
+    .progress > i{display:block;height:100%;background:var(--bar-fill);border-radius:8px}
+    .cert-list{font-size:13px;color:var(--muted);padding-left:18px}
+    .cert-list li{margin:6px 0}
+    .small{font-size:13px;color:var(--muted)}
+    footer .challenge{display:block;margin-top:8px;text-align:center}
+  </style>
+</head>
+<body>
+  <canvas id="bg"></canvas>
+  <div class="wrap overlay">
+    <header>
+      <div class="avatar">RG</div>
+      <div>
+        <h1>Roel George</h1>
+        <div class="subtitle">Data Scientist • Machine Learning Engineer • Applied AI</div>
+        <div style="margin-top:6px" class="small"><a href="mailto:roelgeorge@gmail.com">roelgeorge@gmail.com</a> • <a href="https://github.com/RoelGeorge" target="_blank">github.com/RoelGeorge</a></div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#certifications" style="margin-left:10px">Certifications</a>
+        <a href="#contact" style="margin-left:10px">Contact</a>
+      </nav>
+    </header>
+
+    <div class="grid">
+      <aside>
+        <div class="card">
+          <div class="section-title"><h3>About</h3></div>
+          <p class="lead">Versatile Data & ML practitioner experienced in building end-to-end analytical pipelines, KPI reporting, ML-driven visualizations, and applied AI prototypes. Comfortable across Python, R, SQL, PySpark and modern ML toolchains.</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <div class="section-title"><h3>Core Skills</h3></div>
+          <div style="margin-top:8px; font-size:14px" class="skills-list">
+            <div><strong>Programming:</strong> Python, R</div>
+            <div><strong>Python Libraries:</strong> Pandas, NumPy, Scikit-learn, PyTorch, Seaborn</div>
+            <div><strong>Data Tools:</strong> SQL, PySpark, Hive</div>
+            <div><strong>Machine Learning:</strong> Classification, Regression, Clustering, Time-Series Analysis, Feature Engineering, Model Evaluation</div>
+            <div><strong>Deep Learning:</strong> Neural Networks, Transfer Learning</div>
+            <div><strong>NLP:</strong> Tokenization, Text Preprocessing, Vectorization</div>
+            <div><strong>Visualization:</strong> R Shiny, Matplotlib, Seaborn</div>
+            <div><strong>Version Control:</strong> Git</div>
+            <div><strong>Modern AI:</strong> LLMs, RAG, Prompt Engineering</div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <div class="section-title"><h3>Languages</h3></div>
+          <div style="margin-top:8px">
+            <div class="lang-row">
+              <div class="lang-label">English <small style="color:var(--teal)">(Native)</small></div>
+              <div class="progress"><i style="width:100%"></i></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-label">Hindi <small style="color:var(--teal)">(Native)</small></div>
+              <div class="progress"><i style="width:100%"></i></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-label">French <small style="color:var(--teal)">(B1)</small></div>
+              <div class="progress"><i style="width:50%"></i></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-label">Malayalam <small style="color:var(--teal)">(Conversational)</small></div>
+              <div class="progress"><i style="width:50%"></i></div>
+            </div>
+            <div class="lang-row">
+              <div class="lang-label">Tamil <small style="color:var(--teal)">(Conversational)</small></div>
+              <div class="progress"><i style="width:45%"></i></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <div class="section-title"><h3>Quick Links</h3></div>
+          <div style="margin-top:8px" class="small">
+            <div style="margin-bottom:8px"><a class="btn" href="/mnt/data/Roel_CV_Oct.pdf" target="_blank" rel="noopener">Download resume (PDF)</a></div>
+            <div style="margin-top:6px"><a href="https://github.com/RoelGeorge" target="_blank" rel="noopener">GitHub profile</a></div>
+            <div style="margin-top:6px"><a href="mailto:roelgeorge@gmail.com">roelgeorge@gmail.com</a></div>
+
+            <!-- Chess CTA inside Quick Links -->
+            <div style="margin-top:12px">
+              <a class="chess-cta" href="https://www.chess.com/member/roelgeorge" target="_blank" rel="noopener">
+<!--                &lt;!&ndash; simple chess piece SVG icon &ndash;&gt;-->
+<!--                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">-->
+<!--                  <path d="M7 21h10v-2H7v2zM8 19l1-2h6l1 2" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>-->
+<!--                  <path d="M12 3c-1.657 0-3 1.343-3 3v1h6V6c0-1.657-1.343-3-3-3z" fill="white" opacity="0.95"/>-->
+<!--                </svg>-->
+                <span>Up for a challenge? ♟️&nbsp;Let’s play!</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <section class="card" id="projects">
+          <div class="section-title"><h3>Featured Projects</h3></div>
+          <div class="projects" style="margin-top:8px">
+            <div class="project">
+              <h4><strong><a href="https://github.com/RoelGeorge/musAIc" target="_blank" rel="noopener">musAIc</a></strong></h4>
+              <p class="lead">Generative audio & source separation prototype focused on music-creation workflows.</p>
+            </div>
+            <div class="project">
+              <h4><strong><a href="https://github.com/RoelGeorge/Integrated-face-recognition-and-mask-detection" target="_blank" rel="noopener">Facial Recognition and Mask Detection</a></strong></h4>
+              <p class="lead">Face recognition + mask detection demo built with Python / CV techniques.</p>
+            </div>
+            <div class="project">
+              <h4><strong><a href="https://github.com/RoelGeorge/TSF-GRIPJUNE21" target="_blank" rel="noopener">TSF-GRIPJUNE21</a></strong></h4>
+              <p class="lead">Project from TSF GRIP program - HTML demo and coursework.</p>
+            </div>
+            <div class="project">
+              <h4><strong><a href="https://github.com/RoelGeorge/Thalamus-Infotech" target="_blank" rel="noopener">Thalamus-Infotech</a></strong></h4>
+              <p class="lead">R-based analytics & reporting code used during Thalamus InfoTech internship.</p>
+            </div>
+            <div class="project">
+              <h4><strong><a href="https://github.com/RoelGeorge" target="_blank" rel="noopener">More on GitHub</a></strong></h4>
+              <p class="lead">See other experimental repos and demos on my GitHub profile.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:14px" id="certifications">
+          <div class="section-title"><h3>Certifications</h3></div>
+          <ul class="cert-list">
+            <li><a href="https://www.coursera.org/account/accomplishments/specialization/ZHFEWNUUK26F" target="_blank" rel="noopener">Data Science: Foundations using R - Johns Hopkins University (Specialization) </a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/H8KCL9YYL3GG"> Machine Learning - Stanford University </a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/VFZP6S95TKZ4"> Reproducible Research - Johns Hopkins University </a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/UPVEH29GGGJZ"> The Data Scientist’s Toolbox - Johns Hopkins University </a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/94KVT8YY2FLP"> Exploratory Data Analysis - Johns Hopkins University</a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/23N3CHQ2GD24"> Getting and Cleaning Data - Johns Hopkins University </a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/9YPCV865XWUW"> R Programming - Johns Hopkins University </a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/URXHKWUN6NRL"> Data Science Math Skills - Duke University </a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/K3HNE8U8RYF3"> Ask Questions to Make Data-Driven Decisions - Google </a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/9GQ6FTEZVEF2">Foundations: Data, Data Everywhere - Google </a></li>
+            <li><a href="https://www.coursera.org/account/accomplishments/verify/9A8F54DGVPBM"> Prepare Data for Exploration - Google </a></li>
+          </ul>
+        </section>
+
+      </main>
+    </div>
+
+    <footer align="right">
+     - Roel George • <a href="https://github.com/RoelGeorge" target="_blank" rel="noopener">github.com/RoelGeorge</a>
+    </footer>
+  </div>
+
+  <!-- MATRIX ANIMATION (SLOW + FIXED CHARACTERS PER COLUMN) -->
+  <script>
+  (function(){
+    const canvas = document.getElementById('bg');
+    const ctx = canvas.getContext('2d');
+
+    let w = canvas.width = innerWidth;
+    let h = canvas.height = innerHeight;
+
+    const fontSize = 14;
+    let columns = Math.floor(w / fontSize);
+
+    // vertical positions
+    const drops = new Array(columns).fill(0);
+    // fixed character for each column
+    let colChars = new Array(columns).fill(null);
+
+    function pickChar() {
+      // more 1s than 0s
+      return Math.random() > 0.35 ? "1" : "0";
+    }
+
+    // init
+    for (let i = 0; i < columns; i++) {
+      colChars[i] = pickChar();
+      drops[i] = Math.random() * 10;
+    }
+
+    const neon = "rgba(0,255,120,0.22)";
+    const neonText = "rgba(0,255,120,0.95)";
+
+    function draw(){
+      ctx.fillStyle = "rgba(7,16,25,0.22)";
+      ctx.fillRect(0,0,w,h);
+
+      ctx.font = fontSize + "px monospace";
+
+      for(let i = 0; i < columns; i++){
+        const text = colChars[i];
+        const x = i * fontSize;
+        const y = drops[i] * fontSize;
+
+        ctx.fillStyle = neon;
+        ctx.fillText(text, x, y);
+        ctx.fillStyle = neonText;
+        ctx.fillText(text, x, y);
+
+        // reset occasionally
+        if (y > h && Math.random() > 0.975) {
+          drops[i] = 0;
+          colChars[i] = pickChar();
+        }
+
+        drops[i] += 0.25; // slow flow
+      }
+
+      requestAnimationFrame(draw);
+    }
+
+    addEventListener("resize", () => {
+      w = canvas.width = innerWidth;
+      h = canvas.height = innerHeight;
+      columns = Math.floor(w / fontSize);
+      drops.length = columns;
+      colChars.length = columns;
+      for(let i=0;i<columns;i++){
+        if(!drops[i]) drops[i] = Math.random()*10;
+        if(!colChars[i]) colChars[i] = pickChar();
+      }
+    });
+
+    draw();
+  })();
+  </script>
+</body>
+</html>
